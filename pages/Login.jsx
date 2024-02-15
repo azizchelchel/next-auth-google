@@ -3,7 +3,6 @@ import { useSession, signIn, signOut } from "next-auth/react";
 
 const Login = () => {
   const { data: session } = useSession();
-  console.log(session);
   if (session) {
     return (
       <div className="w-full flex flex-col bg-slate-700 justify-center items-center h-screen">
